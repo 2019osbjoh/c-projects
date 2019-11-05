@@ -2,18 +2,17 @@
 
 int main() {
 	
-	int radius;
-	double diameter, area;
+	double radius, diameter, area;
 	
-	printf("Enter a radius to find the diameter: ");
-	scanf("%i", &radius);
+	printf("\nEnter a radius to find the diameter: ");
+	scanf("%lf", &radius);
 			
-	diameter = (double) radius / 2;
+	diameter = radius / 2.0F;
 	area = 3.14159 * (radius * radius);
 
- 	printf("\nThe given radius is: %i\n", radius);
+ 	printf("\nThe given radius is: %g\n", radius);
 	printf("The Diameter is: %g\n", diameter);	
-	printf("The area is equal to around: %g\n", area);
+	printf("The area is equal to around: %g\n\n", area);
 	
 	return 0;
 }
