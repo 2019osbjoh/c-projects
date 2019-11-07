@@ -7,21 +7,19 @@ int main() {
 	// https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80#Notes
 
 	long double pi;
-	long double num = 1.0;
+	long double num = 0.0;
+	long double sign = 1.0;
 	long long n;
-	int denominator = 1;
 	int i; 
 	
 	
 	// ask for number of reps
-	printf("\nEnter the number of repititions to determine accuracy of approximation: ");
+	printf("\nEnter the number of terms to determine approximation: ");
 	scanf("%lli", &n);	
 
 	for(i = 0; i < n; i++) {
-		denominator = denominator + 2;
-		num = num - (1.0L / denominator);
-		denominator = denominator + 2;
-		num = num + (1.0L / denominator);
+		num += sign / (2.0F * i + 1.0F);
+		sign = -sign;
 	}
 	
 	pi = num * 4.0L;
