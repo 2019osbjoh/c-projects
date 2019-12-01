@@ -22,7 +22,6 @@ void input(int a[], int num) {
 
 
 int main() {
-	// Calculates prime numbers by removing multiples interatively from a list
 	int length = 10;
 	int i;
 	int list[length];
