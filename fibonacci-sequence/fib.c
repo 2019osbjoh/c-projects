@@ -6,7 +6,7 @@ int main(void) {
 	x = 0;
 	y = 1;
 
-	while (x < 255) {
+	while (x < 1000) {
 		printf("%d\n", x);
 			
 		z = x + y;
